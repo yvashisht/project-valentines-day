@@ -14,26 +14,24 @@
         h1 {
             color: #ff4081;
         }
-        img {
-            width: 300px;
-            height: auto;
-            border: 5px solid white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 20px;
-        }
         .meme-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 20px;
         }
-        .meme {
+        .meme img {
+            width: 200px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height to make all images the same size */
+            object-fit: cover; /* Ensures the image covers the area, might crop */
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin: 10px;
         }
         p {
             color: #333;
             font-size: 18px;
-            margin-top: 30px;
         }
         .button {
             background-color: #ff4081;
@@ -47,7 +45,6 @@
             cursor: pointer;
         }
     </style>
-</head>
 <body>
     <h1>Will You Be My Valentine?</h1>
     <div class="meme-container">
@@ -56,13 +53,15 @@
             <img src="https://pbs.twimg.com/media/ETlDdQ8WAAcPzbl?format=jpg&name=large" alt="Cat Meme 1">
         </div>
         <div class="meme">
-            <img src="https://media1.tenor.com/m/CNI1fSM1XSoAAAAd/shocked-surprised.gif alt="Cat Meme 2">
+            <img src="https://media1.tenor.com/m/CNI1fSM1XSoAAAAd/shocked-surprised.gif alt=" alt="Cat Meme 2">
         </div>
         <!-- Add more memes as needed -->
     </div>
     <p>Because you make my heart purr every day! 🐱❤️</p>
-    <button class="button" onclick="handleResponse(true)">Yes, I will!</button>
-    <button class="button" onclick="handleResponse(false)">No, thanks.</button>
+    <div>
+        <button class="button" onclick="handleResponse(true)">Yes, I will!</button>
+        <button class="button" onclick="handleResponse(false)">No, thanks.</button>
+    </div>
 
     <script>
         function handleResponse(response) {
@@ -75,3 +74,4 @@
     </script>
 </body>
 </html>
+
