@@ -1,1 +1,77 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffccd5;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        .meme-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .meme {
+            margin: 10px;
+        }
+        p {
+            color: #333;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    <div class="meme-container">
+        <!-- Add your cat meme images here -->
+        <div class="meme">
+            <img src="cat-meme-url-1.jpg" alt="Cat Meme 1">
+        </div>
+        <div class="meme">
+            <img src="cat-meme-url-2.jpg" alt="Cat Meme 2">
+        </div>
+        <!-- Add more memes as needed -->
+    </div>
+    <p>Because you make my heart purr every day! 🐱❤️</p>
+    <button class="button" onclick="handleResponse(true)">Yes, I will!</button>
+    <button class="button" onclick="handleResponse(false)">No, thanks.</button>
+
+    <script>
+        function handleResponse(response) {
+            if (response) {
+                alert('Meow! I knew you\'d say yes! 🐾');
+            } else {
+                alert('WHY DO U NEED A NO BUTTON? Are you kitten me right meow? 😹');
+            }
+        }
+    </script>
+</body>
+</html>
